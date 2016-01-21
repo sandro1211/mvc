@@ -1,0 +1,17 @@
+body {
+    background: silver;
+}
+
+#header {
+    padding: gold;
+}
+
+#content{
+    background: #fff;
+    padding: 20px;
+}
+
+#footer{
+    background: aliceblue;
+    padding: 20px;
+}

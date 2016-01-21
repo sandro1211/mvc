@@ -5,6 +5,8 @@ class Help extends Controller {
     function __construct() {
         parent::__construct();
         //echo 'We are inside Help!';
+        $this->view->msg = 'BODY';
+        $this->view->render('help/index');
     }
     
     public function other($arg = false){

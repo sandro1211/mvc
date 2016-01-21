@@ -19,7 +19,7 @@ class Bootstrap {
             require  $file;
         } else{
             require 'controllers/error.php';
-            $controller = new Error();
+            $controller = new Error($url[0]);
             return false;
         }
         
