@@ -9,16 +9,16 @@ class Bootstrap {
         //print_r($url);
         
         if(empty($url[0])){
-            require 'controllers/index.php';
+            require 'controllers/indexController.php';
             $controller = new Index();
             return false;
         }
         
-        $file = 'controllers/' . $url[0] . '.php';
+        $file = 'controllers/' . $url[0] . 'Controller.php';
         if (file_exists($file)){
             require  $file;
         } else{
-            require 'controllers/error.php';
+            require 'controllers/errorController.php';
             $controller = new Error($url[0]);
             return false;
         }

@@ -6,7 +6,7 @@ class Error extends Controller {
         parent::__construct();
         //echo 'This is an error!';
         $this->view->msg = "The page $url doesn't exist!";
-        $this->view->render('/error/index');
+        $this->view->render(get_class($this));
     }
 
 }
