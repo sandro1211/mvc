@@ -1,4 +1,5 @@
 <?php
 
-define('URL', 'localhost/mvc/');
-define('URL', 'leal32b/mvc/');
+define('URL', 'http://localhost/mvc/');
+//define('URL', 'http://leal32b.com/mvc/');
+

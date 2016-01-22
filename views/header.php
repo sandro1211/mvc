@@ -3,17 +3,16 @@
     <head>
         <title>Test</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="public/css/bootstrap.min.css"/>
-        <script type="text/javascript" src="public/js/bootstrap.min.css"></script>
-        <!--<link rel="stylesheet" href="public/css/leal32b.css"/>-->
+        <link rel="stylesheet" href="<?php echo URL; ?>public/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.min.js"></script>
     </head>
     <body>
         <div id="header">
             THIS IS THE HEADER
             <br/>
-            <a href="index">Index</a>
-            <a href="help">Help</a>
-            <a href="login">Login</a>
+            <a href="<?php echo URL; ?>index">Index</a>
+            <a href="<?php echo URL; ?>help">Help</a>
+            <a href="<?php echo URL; ?>login">Login</a>
         </div>
         <hr>
         <div id="content">

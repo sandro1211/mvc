@@ -5,15 +5,19 @@ class Help extends Controller {
     function __construct() {
         parent::__construct();
         //echo 'We are inside Help!';
-        $this->view->msg = 'BODY';
+    }
+    
+    function index(){
         $this->view->render(get_class($this));
     }
     
     public function other($arg = false){
-        echo 'We are inside other, ';
-        echo 'Optional: ' . $arg . '!';
-        
-        require 'models/help_model.php';
-        $model = new Help_Model();
+        require 'models/helpModel.php';
+        $model = new HelpModel();
+        $this->view->blah = $model->blah();
+    }
+    
+    public function hey($var = false){
+        echo 'what comes: ' . $var;
     }
 }
