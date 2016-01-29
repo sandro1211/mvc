@@ -11,7 +11,7 @@ class Index extends Controller {
 
     function index() {
         $this->view->render(get_class($this), $this->pageTitle);
-        echo 'index message!';
+        echo 'this was edited in github.com';
     }
 
 }
