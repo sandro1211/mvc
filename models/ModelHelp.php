@@ -1,6 +1,6 @@
 <?php
 
-class HelpModel extends Model{
+class ModelHelp extends Model{
 
     function __construct() {
         echo 'Help Model';

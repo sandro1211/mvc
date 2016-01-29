@@ -14,6 +14,8 @@ class Dashboard extends Controller {
             header('location: ../login');
             exit;
         }
+        
+        $this->setJs('default');
     }
 
     function index() {

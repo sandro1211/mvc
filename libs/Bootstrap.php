@@ -8,17 +8,17 @@ class Bootstrap {
         $url = explode('/', $url);
 
         if (empty($url[0])) {
-            require 'controllers/indexController.php';
+            require 'controllers/controllerIndex.php';
             $controller = new Index();
             $controller->index();
             return false;
         }
 
-        $file = 'controllers/' . $url[0] . 'Controller.php';
+        $file = 'controllers/controller' . $url[0] . '.php';
         if (file_exists($file)) {
             require $file;
         } else {
-            require 'controllers/errorController.php';
+            require 'controllers/controllerError.php';
             $controller = new Error();
             $controller->index($url[0]);
             return false;
