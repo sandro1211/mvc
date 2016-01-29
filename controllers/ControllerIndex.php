@@ -11,7 +11,7 @@ class Index extends Controller {
 
     function index() {
         $this->view->render(get_class($this), $this->pageTitle);
-        echo "this was edited in guarani's pc";
+        echo "IVANES!";
     }
 
 }
